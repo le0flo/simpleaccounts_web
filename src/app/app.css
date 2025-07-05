@@ -1,0 +1,13 @@
+:host {
+  position: relative;
+  padding: 10px;
+
+  width: 300px;
+  min-height: 500px;
+  height: 80vh;
+
+  background: var(--bg-2);
+  color: var(--text-2);
+
+  border-radius: 7.5px;
+}
