@@ -16,6 +16,10 @@
   --text-2: oklch(0.3 0 0);
   --border: oklch(0.5 0 0);
 
+  --glass: rgba(100, 100, 100, 0.2);
+  --glass-border: rgba(140, 140, 140, 0.4);
+  --glass-shadow: rgba(0, 0, 0, 0.1);
+
   color-scheme: light dark;
 }
 
@@ -43,11 +47,21 @@ body {
   display: grid;
   place-items: center;
 
-  background: var(--bg-1);
+  background: linear-gradient(37deg, var(--bg-1) 40%, var(--bg-3) 95%);
   color: var(--text-2);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.glass {
+  padding: 20px;
+
+  background: var(--glass);
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--glass-border);
+  border-radius: 7.5px;
+  box-shadow: 0 5px 30px var(--glass-shadow);
 }
